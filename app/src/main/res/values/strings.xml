@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">Shopping-App_Admin</string>
+    <string name="app_name" translatable="false">Shopping-App_Admin</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_internet">No Internet</string>
+    <string name="image">image\n</string>
+    <string name="category">Category</string>
+    <string name="inventory">Inventory</string>
+    <string name="copuns">Copuns</string>
+    <string name="search_product_by_name">Search by name</string>
+    <string name="plus">+</string>
+    <string name="product_details">Product Details</string>
+    <string name="price">Price</string>
+    <string name="updated">Updated</string>
+    <string name="products">Products</string>
 </resources>

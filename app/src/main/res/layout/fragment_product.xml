@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProductFragment">
+
+    <ImageView
+        android:id="@+id/image_view_back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="8dp"
+        android:contentDescription="@string/image"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/peoducts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/products"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/image_view_back"
+        app:layout_constraintStart_toEndOf="@id/image_view_back"
+        app:layout_constraintTop_toTopOf="@id/image_view_back" />
+
+
+    <EditText
+        android:id="@+id/edit_text_search"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints="name"
+        android:background="@color/white"
+        android:drawableStart="@drawable/baseline_search_24"
+        android:drawablePadding="4dp"
+        android:drawableTint="@color/light_burgendy"
+        android:hint="@string/search_product_by_name"
+        android:inputType="text"
+        android:maxEms="20"
+        android:maxLines="1"
+        android:paddingVertical="8dp"
+        android:textColorHint="@color/light_burgendy"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_view_back"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_add_product"
+        style="@style/ButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="4dp"
+        android:background="@drawable/button_background_gradient"
+        android:drawableStart="@drawable/baseline_add_24"
+        android:drawableTint="@color/black"
+        android:text="@string/plus"
+        app:layout_constraintBottom_toBottomOf="@id/edit_text_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edit_text_search"
+        app:layout_constraintTop_toTopOf="@id/edit_text_search"
+        app:layout_constraintWidth_percent="0.13" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_products"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_search"
+        tools:listitem="@layout/item_product" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
