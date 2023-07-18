@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <string name="app_name" translatable="false">Shopping-App_Admin</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="image" translatable="false">image\n</string>
+    <string name="category">الفئات</string>
+    <string name="inventory">المخزون</string>
+    <string name="copuns">كوبونات الخصم</string>
+    <string name="search_product_by_name">بحث بالاسم</string>
+    <string name="plus" translatable="false">+</string>
+    <string name="product_details">تفاصيل المنتج</string>
+    <string name="price">السعر</string>
+    <string name="updated">تم التحديث</string>
+    <string name="products">المنتجات</string>
+    <string name="no_internet">لا يوجد اتصال بالانترنت</string>
 </resources>
